@@ -1,0 +1,101 @@
+/* Font and Base Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+/* Header and Navbar */
+.navbar-brand {
+    color: #0d6efd !important; /* Primary blue accent color */
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: #495057;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #0d6efd;
+}
+
+/* Header Section */
+header {
+    background-color: #0d6efd; /* Primary blue */
+    color: #ffffff;
+}
+
+header h1 {
+    font-weight: 700;
+}
+
+header .lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+/* Main Content */
+h2 {
+    color: #0d6efd;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    color: #6c757d;
+    font-weight: 500;
+}
+
+.container ul li {
+    color: #495057;
+}
+
+/* Project Cards */
+.card {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+    color: #0d6efd;
+    font-weight: 600;
+}
+
+.btn-primary {
+    background-color: #0d6efd;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0a58ca;
+}
+
+/* Footer */
+footer {
+    background-color: #f1f1f1;
+    color: #6c757d;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Contact Links */
+#contact ul li a {
+    color: #0d6efd;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+#contact ul li a:hover {
+    color: #0a58ca;
+}
