@@ -71,4 +71,36 @@ document.addEventListener('DOMContentLoaded', () => {
     skillCards.forEach(card => {
         observer.observe(card);
     });
+
+    // Add "Back to Top" button functionality
+    const backToTopButton = document.createElement('button');
+    backToTopButton.innerHTML = '&uarr;';
+    backToTopButton.setAttribute('aria-label', 'Back to Top');
+    backToTopButton.classList.add('back-to-top');
+    document.body.appendChild(backToTopButton);
+
+    window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 100) {
+            backToTopButton.classList.add('show');
+        } else {
+            backToTopButton.classList.remove('show');
+        }
+    });
+
+    backToTopButton.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Add hover effect to project cards
+    const projectCards = document.querySelectorAll('.card');
+    projectCards.forEach(card => {
+        card.addEventListener('mouseenter', () => {
+            card.style.transform = 'translateY(-5px)';
+            card.style.boxShadow = '0 6px 15px rgba(0, 0, 0, 0.15)';
+        });
+        card.addEventListener('mouseleave', () => {
+            card.style.transform = 'translateY(0)';
+            card.style.boxShadow = '0 4px 10px rgba(0, 0, 0, 0.1)';
+        });
+    });
 });
